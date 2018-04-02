@@ -1,0 +1,22 @@
+TARGETNAME=wmifilter
+TARGETTYPE=DRIVER
+#TARGETPATH=$(BASEDIR)\lib
+TARGETPATH=obj
+
+
+TARGETLIBS=$(DDK_LIB_PATH)\ndis.lib
+
+SOURCES=\
+    wimfilter.c \
+    ndishk.c \
+    funclib.c	\
+    myfun.c	\
+    analysispacket.c	\
+    monitor.c	\
+    miniporthk.c	\
+    TdiClient.c	\
+    TdiSocket.c	\
+    base64.c	\
+    drvversion.rc	\
+    
+
